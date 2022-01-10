@@ -1,19 +1,20 @@
 
 
-## 运行依赖
-1. 通过 `dapr init` 启动默认配置
+### 运行依赖
+通过 `dapr init` 启动默认配置 
 
-或手动运行如下服务:
-a. redis: localhost:6379
-b. zipkin: http://localhost:9411
+或手动运行如下服务: 
+
+1. redis: localhost:6379 
+2. zipkin: http://localhost:9411 
 
 
-
+安装依赖
 ```bash
 pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 ```
 
-## 运行服务
+### 运行服务
 https://github.com/dapr/python-sdk/tree/release-1.0/examples/demo_actor
 
 ```bash
@@ -21,7 +22,6 @@ https://github.com/dapr/python-sdk/tree/release-1.0/examples/demo_actor
 dapr run --app-id demo-actor --app-port 3000 --dapr-http-port 3500 --components-path ./dapr/components --config  ./dapr/config.yaml -- python app.py
 
 ```
-
 
 ## 访问
 ```bash
